@@ -1,0 +1,1009 @@
+/* COLOR PALETTE */
+
+:root {
+    --ivory: #F7D9B2;
+    --forest: #2B3222;
+    --burgundy: #3D0E14;
+    --walnut: #2D1E1C;
+    --soft-ivory: #FFF8ED;
+    --antique-gold: #B69A70;
+}
+
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--forest);
+}
+
+/* OPENING PAGE */
+
+.opening-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #39432e 0%,
+            var(--forest) 75%
+        );
+
+    padding: 30px;
+    color: var(--soft-ivory);
+}
+
+/* CONTENT */
+
+.opening-content {
+    max-width: 700px;
+    animation: fadeIn 1.5s ease;
+}
+
+/* TOP LABEL */
+
+.top-label {
+    font-size: 11px;
+    letter-spacing: 5px;
+    color: var(--antique-gold);
+    margin-bottom: 25px;
+}
+
+/* DIVIDER */
+
+.divider {
+    width: 65px;
+    height: 1px;
+    background: var(--antique-gold);
+    margin: 0 auto 30px;
+}
+
+/* HEADING */
+
+/* HEADING */
+
+h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(55px, 9vw, 95px);
+    line-height: 0.95;
+    font-weight: 500;
+    letter-spacing: -2px;
+}
+
+h1 .person-name {
+    display: block;
+    font-size: 0.65em;
+    color: var(--ivory);
+    font-style: italic;
+    margin-top: 8px;
+    letter-spacing: -1px;
+}
+
+/* SUBTITLE */
+
+.subtitle {
+    font-family: 'Dancing Script', cursive;
+    font-size: 27px;
+    color: var(--antique-gold);
+    margin-top: 25px;
+}
+
+.description {
+    font-size: 13px;
+    line-height: 2;
+    color: #D6CBB9;
+    margin-top: 30px;
+    font-weight: 300;
+}
+
+/* BUTTON */
+
+/* BUTTON */
+
+button {
+    margin-top: 40px;
+    padding: 15px 35px;
+
+    border: 1px solid var(--antique-gold);
+    border-radius: 50px;
+
+    background: var(--ivory);
+    color: var(--forest);
+
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+
+    cursor: pointer;
+
+    transition: all 0.4s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+button:hover {
+    background: var(--antique-gold);
+    color: var(--walnut);
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+button:active {
+    transform: scale(0.96);
+}
+
+button span {
+    margin-left: 8px;
+}
+
+/* BOTTOM LABEL */
+
+.bottom-label {
+    margin-top: 75px;
+    font-size: 9px;
+    letter-spacing: 4px;
+    color: var(--antique-gold);
+}
+
+/* ANIMATION */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 600px) {
+
+    .top-label {
+        font-size: 9px;
+        letter-spacing: 3px;
+    }
+
+    .subtitle {
+        font-size: 23px;
+    }
+
+    .description {
+        font-size: 12px;
+    }
+
+    .bottom-label {
+        margin-top: 55px;
+    }
+
+}
+@media (max-width: 600px) {
+
+    .top-label {
+        font-size: 9px;
+        letter-spacing: 3px;
+    }
+
+    .subtitle {
+        font-size: 23px;
+    }
+
+    .description {
+        font-size: 12px;
+    }
+
+    .bottom-label {
+        margin-top: 55px;
+    }
+
+}
+
+/* SECTION 2: GRADUATION */
+
+/* SECTION 2: GRADUATION */
+
+.graduation-section {
+    min-height: 100vh;
+
+    background:
+        linear-gradient(
+            rgba(43, 50, 34, 0.72),
+            rgba(43, 50, 34, 0.82)
+        ),
+        url('../assets/images/azril.jpg');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 80px 25px;
+
+    color: var(--soft-ivory);
+}
+
+.graduation-content h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(45px, 7vw, 75px);
+    font-weight: 500;
+    color: var(--soft-ivory);
+    line-height: 1.1;
+}
+
+.graduation-content h2 span {
+    display: block;
+    font-style: italic;
+    color: var(--ivory);
+}
+
+.graduation-subtitle {
+    font-family: 'Dancing Script', cursive;
+    font-size: 28px;
+    color: var(--ivory);
+    margin-top: 20px;
+}
+
+.graduation-message {
+    max-width: 520px;
+    margin: 35px auto;
+    color: var(--soft-ivory);
+    font-size: 14px;
+    line-height: 2;
+    font-weight: 300;
+}
+
+.section-label {
+    color: var(--ivory);
+}
+
+.graduation-date {
+    color: var(--ivory);
+}
+
+/* NEXT BUTTON */
+
+.next-button {
+    background: var(--forest);
+    color: var(--soft-ivory);
+    border: none;
+    border-radius: 50px;
+
+    padding: 15px 30px;
+    margin-top: 35px;
+
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+.next-button:hover {
+    background: var(--burgundy);
+    color: var(--soft-ivory);
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .graduation-section {
+        padding: 60px 22px;
+    }
+
+    .graduation-message {
+        font-size: 13px;
+    }
+
+    .graduation-subtitle {
+        font-size: 24px;
+    }
+
+}
+
+/* SECTION 3: OUR LITTLE MEMORIES */
+
+.memories-section {
+    min-height: 100vh;
+    background-color: #F7D9B2 !important;
+
+    background-image:
+        radial-gradient(
+            rgba(61, 14, 20, 0.15) 1px,
+            transparent 1px
+        ) !important;
+
+    background-size: 22px 22px !important;
+    padding: 100px 7%;
+    text-align: center;
+    position: relative;
+}
+
+/* HEADER */
+
+.memories-header h2 {
+    color: #3D0E14;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 55px;
+}
+
+.memories-header h2 span {
+    color: #2B3222;
+    font-style: italic;
+}
+
+.memories-header {
+    margin-bottom: 60px;
+}
+
+.memories-header::after {
+    content: "✳";
+    display: block;
+    color: #B69A70;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.memories-section::before,
+.memories-section::after {
+    content: "";
+    position: absolute;
+    left: 7%;
+    right: 7%;
+    height: 1px;
+    background: rgba(61, 14, 20, 0.25);
+}
+
+.memories-section::before {
+    top: 45px;
+}
+
+.memories-section::after {
+    bottom: 45px;
+}
+
+/* PHOTO GALLERY */
+
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 45px 35px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* TABLET */
+@media (max-width: 900px) {
+    .photo-gallery {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px 20px;
+    }
+}
+
+/* HP */
+@media (max-width: 480px) {
+    .photo-gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px 12px;
+    }
+
+    .memories-section {
+        padding: 75px 15px;
+    }
+
+    .polaroid {
+        padding: 8px 8px 18px;
+        border-radius: 12px;
+    }
+
+    .polaroid p {
+        font-size: 14px;
+    }
+}
+
+/* POLAROID */
+
+.polaroid {
+    background: #3D0E14;
+    padding: 12px 12px 25px;
+    border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(45, 30, 28, 0.25);
+    transform: rotate(-2deg);
+    transition: all 0.4s ease;
+    overflow: hidden;
+}
+
+.polaroid:nth-child(even) {
+    transform: rotate(2deg);
+}
+
+.polaroid:hover {
+    transform: translateY(-10px) rotate(0deg);
+    box-shadow: 0 15px 30px rgba(45, 30, 28, 0.3);
+}
+
+.polaroid img {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+}
+
+.polaroid p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 19px;
+    font-style: italic;
+    font-weight: 500;
+    color: #F7D9B2;
+    margin-top: 15px;
+    letter-spacing: 0.5px;
+}
+
+/* FOOTER */
+
+.memories-footer {
+    margin-top: 75px;
+}
+
+.memories-footer p {
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+    color: var(--burgundy);
+    margin-bottom: 20px;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .photo-gallery {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px 18px;
+    }
+
+    .memories-section {
+        padding: 75px 20px;
+    }
+
+    .polaroid {
+        padding: 8px 8px 18px;
+    }
+
+    .polaroid p {
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    .photo-gallery {
+        grid-template-columns: 1fr;
+        max-width: 280px;
+    }
+
+}
+
+/* SECTION 4: THE STORY OF US */
+
+.story-section {
+    min-height: 100vh;
+    background: #FFF8ED;
+    padding: 100px 7%;
+    text-align: center;
+}
+
+.story-header {
+    margin-bottom: 70px;
+}
+
+.story-label {
+    color: #B69A70;
+    letter-spacing: 3px;
+    font-size: 12px;
+}
+
+.story-header h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 55px;
+    color: #3D0E14;
+    margin: 15px 0;
+}
+
+.story-header h2 span {
+    color: #2B3222;
+    font-style: italic;
+}
+
+.story-description {
+    color: #40392D;
+    font-size: 15px;
+}
+
+/* TIMELINE */
+
+.timeline {
+    max-width: 650px;
+    margin: auto;
+    text-align: left;
+    border-left: 2px solid #B69A70;
+    padding-left: 35px;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 55px;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -43px;
+    top: 5px;
+    width: 14px;
+    height: 14px;
+    background: #3D0E14;
+    border: 3px solid #B69A70;
+    border-radius: 50%;
+}
+
+.timeline-content {
+    background: #F7D9B2;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 5px 18px rgba(61, 14, 20, 0.08);
+}
+
+.timeline-date {
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #855B45;
+}
+
+.timeline-content h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 25px;
+    color: #3D0E14;
+    margin: 10px 0;
+}
+
+.timeline-content p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #40392D;
+}
+
+.story-footer {
+    margin-top: 60px;
+}
+
+.story-footer p {
+    font-family: 'Dancing Script', cursive;
+    font-size: 23px;
+    color: #3D0E14;
+    margin-bottom: 25px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 480px) {
+
+    .story-section {
+        padding: 75px 25px;
+    }
+
+    .story-header h2 {
+        font-size: 40px;
+    }
+
+    .timeline {
+        padding-left: 25px;
+    }
+
+    .timeline-dot {
+        left: -33px;
+    }
+
+    .timeline-content {
+        padding: 20px;
+    }
+
+    .timeline-content h3 {
+        font-size: 22px;
+    }
+
+}
+
+/* SECTION 5: A LETTER FOR YOU */
+
+.letter-section {
+    min-height: 100vh;
+    background: #F7D9B2;
+    padding: 100px 7%;
+    text-align: center;
+}
+
+.letter-header {
+    margin-bottom: 65px;
+}
+
+.letter-label {
+    color: #855B45;
+    letter-spacing: 3px;
+    font-size: 12px;
+}
+
+.letter-header h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 55px;
+    color: #3D0E14;
+    margin: 15px 0;
+}
+
+.letter-header h2 span {
+    color: #2B3222;
+    font-style: italic;
+}
+
+.letter-description {
+    color: #40392D;
+    font-size: 15px;
+}
+
+/* ENVELOPE */
+
+.envelope-container {
+    margin: 60px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.envelope {
+    width: 260px;
+    height: 170px;
+    background: #3D0E14;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 12px 25px rgba(61, 14, 20, 0.2);
+}
+
+.envelope-body {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F7D9B2;
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+}
+
+.envelope-body span {
+    position: relative;
+    z-index: 3;
+}
+
+.envelope-flap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 130px solid transparent;
+    border-right: 130px solid transparent;
+    border-top: 100px solid #67232B;
+    z-index: 2;
+}
+.open-letter-button {
+    margin-top: 35px;
+    padding: 14px 30px;
+    border: 1px solid #3D0E14;
+    border-radius: 50px;
+    background: #3D0E14;
+    color: #F7D9B2;
+    font-family: 'DM Sans', sans-serif;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.open-letter-button:hover {
+    background: #2B3222;
+}
+
+/* LETTER PAPER */
+
+.letter-paper {
+    display: none;
+    max-width: 650px;
+    margin: 50px auto;
+    padding: 50px;
+    background: #FFF8ED;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(61, 14, 20, 0.15);
+    text-align: left;
+}
+
+.letter-paper.show {
+    display: block;
+    animation: letterAppear 0.8s ease;
+}
+
+@keyframes letterAppear {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.letter-date {
+    color: #B69A70;
+    font-size: 11px;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+.letter-content h3 {
+    font-family: 'Cormorant Garamond', serif;
+    color: #3D0E14;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.letter-content p {
+    font-family: 'DM Sans', sans-serif;
+    color: #40392D;
+    font-size: 14px;
+    line-height: 1.9;
+    margin-bottom: 20px;
+}
+
+.letter-content .letter-closing {
+    font-family: 'Dancing Script', cursive;
+    color: #3D0E14;
+    font-size: 22px;
+    margin-top: 35px;
+}
+
+.letter-footer {
+    margin-top: 50px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 480px) {
+
+    .letter-section {
+        padding: 75px 20px;
+    }
+
+    .letter-header h2 {
+        font-size: 42px;
+    }
+
+    .envelope {
+        width: 230px;
+        height: 150px;
+    }
+
+    .envelope-flap {
+        border-left-width: 115px;
+        border-right-width: 115px;
+        border-top-width: 85px;
+    }
+
+    .letter-paper {
+        padding: 28px 22px;
+    }
+
+}
+
+/* SECTION 7: FINAL SURPRISE */
+
+.final-section {
+    min-height: 100vh;
+    background: #2B3222;
+    padding: 100px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #FFF8ED;
+    position: relative;
+    overflow: hidden;
+}
+
+.final-content {
+    max-width: 750px;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+}
+
+.final-label {
+    color: #B69A70;
+    font-size: 11px;
+    letter-spacing: 3px;
+    margin-bottom: 35px;
+}
+
+.final-decoration {
+    font-size: 35px;
+    color: #B69A70;
+    margin-bottom: 20px;
+    animation: decorationSpin 12s linear infinite;
+}
+
+@keyframes decorationSpin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.final-content h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 65px;
+    line-height: 1.15;
+    color: #FFF8ED;
+    margin-bottom: 30px;
+}
+
+.final-content h2 span {
+    display: block;
+    color: #F7D9B2;
+    font-style: italic;
+}
+
+.final-message {
+    max-width: 570px;
+    margin: 15px auto;
+    color: #E8DFD0;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.final-divider {
+    width: 65px;
+    height: 1px;
+    background: #B69A70;
+    margin: 40px auto;
+}
+
+.final-content h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px;
+    color: #F7D9B2;
+    margin-bottom: 15px;
+}
+
+.final-closing {
+    font-family: 'Dancing Script', cursive;
+    font-size: 23px;
+    color: #D6C1A5;
+}
+
+.final-signature {
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+    color: #F7D9B2;
+    margin-top: 55px;
+}
+
+.final-year {
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #B69A70;
+    margin-top: 15px;
+}
+
+.back-to-top {
+    margin-top: 45px;
+    padding: 14px 28px;
+    border: 1px solid #B69A70;
+    border-radius: 50px;
+    background: transparent;
+    color: #F7D9B2;
+    font-family: 'DM Sans', sans-serif;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.back-to-top:hover {
+    background: #F7D9B2;
+    color: #2B3222;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 480px) {
+
+    .final-section {
+        padding: 80px 22px;
+    }
+
+    .final-content h2 {
+        font-size: 45px;
+    }
+
+    .final-content h3 {
+        font-size: 25px;
+    }
+
+    .final-message {
+        font-size: 13px;
+    }
+
+    .final-closing {
+        font-size: 21px;
+    }
+
+}
+
+/* GLOBAL BACKGROUND */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: #2B3222;
+    position: relative;
+}
+
+/* SAME BACKGROUND FOR ALL SECTIONS */
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+
+    background:
+        linear-gradient(
+            rgba(43, 50, 34, 0.72),
+            rgba(43, 50, 34, 0.82)
+        ),
+        url('../assets/images/azril.jpeg');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* REMOVE INDIVIDUAL SECTION BACKGROUNDS */
+
+.opening-page,
+.graduation-section,
+.memories-section,
+.story-section,
+.letter-section,
+.chapter-section,
+.final-section {
+    background: transparent !important;
+}
